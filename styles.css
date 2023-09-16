@@ -1,0 +1,108 @@
+*{
+    --color-font: #F7F7F7;
+    --top-btm-color: #373737;
+}
+
+/* Establece estilos para el cuerpo y la página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1{
+    font-weight: 700;
+}
+
+/* Establece estilos para el contenedor principal */
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+/*LEFT SIDE*/
+/* Establece el ancho de la sección izquierda al 33.33% (1/3) del contenedor */
+.left {
+    flex: 1;
+    width: 33.33%;
+    height: 100vh;
+    background-color: #676767; /* Color de fondo opcional para la sección izquierda */
+    display: block;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.title-left{
+    font-size:3em;
+    color: var(--color-font);
+}
+
+.btn-left{
+    height: 5%;
+    width: 75%;
+    margin-bottom: 5%;
+    margin-top: 10%;
+    background-color: var(--top-btm-color);
+    border: none;
+    border-radius: .2em;
+    font-size: large;
+    color: var(--color-font);
+    cursor: pointer;
+    transition: 0.1s box-shadow;
+}
+
+.btn-left:hover{
+    -webkit-box-shadow: 7px 6px 16px -4px rgba(77,76,77,1);
+    -moz-box-shadow: 7px 6px 16px -4px rgba(77,76,77,1);
+    box-shadow: 7px 6px 16px -4px rgba(77,76,77,1);
+}
+
+
+/*RIGHT SIDE*/
+/* Establece el ancho de la sección derecha al 66.66% (2/3) del contenedor */
+.right {
+    flex: 5;
+    width: 66.66%;
+    height: 100vh;
+    background-color: #474747; /* Color de fondo opcional para la sección derecha */
+}
+
+.top, .bottom{
+    flex: 1;
+    background-color: var(--top-btm-color); /* Bordes para separar las partes (opcional) */
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-font);
+}
+
+.middle{
+    flex: 1;
+    background-color: #474747; /* Bordes para separar las partes (opcional) */
+    height: 50vh;
+}
+
+.texto-bottom{
+    font-size: xx-large;
+    background-color: #40414f;
+    border: none;
+    border-radius:5px 0px 0px 5px;
+    width: 60%;
+    padding: 1%;
+    color: #F7F7F7;
+}
+
+.texto-bottom::placeholder{
+    color: #ddd;
+}
+
+.btn-bottom{
+    background-color: #40414f;
+    font-size: 30px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: var(--color-font);
+    cursor: pointer;
+    height: 28.5%;
+}
