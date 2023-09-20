@@ -2,11 +2,71 @@
 const nombre = document.getElementById("text-name");
 const botonNombre = document.getElementById("btn-name");
 const miBoton1 = document.getElementById("btn-1");
-document.get
+const miBoton2 = document.getElementById("btn-2");
+const miBoton3 = document.getElementById("btn-3");
+const miBoton4 = document.getElementById("btn-4");
+const miBoton5 = document.getElementById("btn-5");
+const miBoton6 = document.getElementById("btn-6");
+const miBoton7 = document.getElementById("btn-7");
+const miBoton8 = document.getElementById("btn-8");
+
+//Funcion para mandar el nombre con el boton (click)
+botonNombre.addEventListener('click', () => {
+    const textoIngresado = nombre.value;
+    if(textoIngresado){
+        console.log(textoIngresado)
+    }else{
+        alert("No pusiste nada papu");
+    }
+    nombre.value = '';
+});
+
+//Funcion para enviar el nombre con un enter
+nombre.addEventListener('keydown', function(event) {
+    // Verifica si la tecla presionada es "Enter" (código de tecla 13)
+    if (event.keyCode === 13) {
+      // Obtiene el valor del input
+      const nombre2 = nombre.value;
+      // Muestra el nombre en la consola
+      console.log(nombre2);
+      // Limpia el input
+      nombre.value = '';
+    }
+  });
+
+//Funcion para crear parrafo y borrar el anterior
+
+function crearParrafoEnMiddle(numeroBoton, texto) {
+    const nuevoParrafo = document.createElement('h1');
+    nuevoParrafo.textContent = texto;
+    nuevoParrafo.classList.add('center');
+  
+    const middleDiv = document.getElementById('middle');
+
+    const parrafoAnterior = middleDiv.querySelector('h1.center');
+
+    if (parrafoAnterior) {
+        middleDiv.removeChild(parrafoAnterior);
+    }
+
+    middleDiv.appendChild(nuevoParrafo);
+  
+    console.log(`Párrafo creado por el botón ${numeroBoton}`);
+}
+
+//Funcion que detecta que boton tocamos
+const botones = document.querySelectorAll('.btn-left');
+
+botones.forEach((boton, index) => {
+    boton.addEventListener('click', () => {
+        const texto = textos[index]; // Suponiendo que tengas un array de textos
+        crearParrafoEnMiddle(index + 1, texto);
+    });
+});
 
 //Array
 const textos = [
-    `Hello ${nombre.value}! Please confirm if the issue was fixed after the changes that have been made. Kind regards`,
+    `Hello ${nombre.value}! Please confirm if the issue was fixed after the changes that have been made. Kind regards.`,
     `Hi ${nombre.value}, If no further assistance is needed this ticket will be automatically closed by the end of the day. Regards.`,
     `All Yealink phones have the 'OK' button right in the center of the navigation button (Up, Down, Left, Right), if you press that button once the phone will reveal its IP Address that's something we need to monitor and troubleshoot phones, so please if it happens again, do share with us phone's IP Address. Best Regards.`,
     `Hi ${nombre.value},
@@ -38,33 +98,6 @@ const textos = [
     Local contact full name
     Local contact cellphone
     Business Hours`,
-]
+];
 
-//Funcion para mandar el nombre con el boton (click)
-botonNombre.addEventListener('click', () => {
-    const textoIngresado = nombre.value;
-    if(textoIngresado){
-        console.log(textoIngresado)
-    }else{
-        alert("No pusiste nada papu");
-    }
-    nombre.value = '';
-});
-
-//Funcion para enviar el nombre con un enter
-nombre.addEventListener('keydown', function(event) {
-    // Verifica si la tecla presionada es "Enter" (código de tecla 13)
-    if (event.keyCode === 13) {
-      // Obtiene el valor del input
-      const nombre2 = nombre.value;
-      // Muestra el nombre en la consola
-      console.log(nombre2);
-      // Limpia el input
-      nombre.value = '';
-    }
-  });
-
-//Funcion para escuchar eventos de los botones
-miBoton1.addEventListener('click', () => {
-    alert('¡Hiciste clic en el botón!');
-});
+console.log(textos[1]);

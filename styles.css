@@ -81,6 +81,7 @@ h1{
     flex: 1;
     background-color: #474747; /* Bordes para separar las partes (opcional) */
     height: 50vh;
+    display: flex;
 }
 
 .texto-bottom{
@@ -105,4 +106,15 @@ h1{
     color: var(--color-font);
     cursor: pointer;
     height: 28.5%;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-font);
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    padding: 0 2rem;
 }
