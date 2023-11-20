@@ -41,7 +41,7 @@ h1{
     height: 5%;
     width: 75%;
     margin-bottom: 5%;
-    margin-top: 10%;
+    margin-top: 5%;
     background-color: var(--top-btm-color);
     border: none;
     border-radius: .2em;
@@ -89,9 +89,10 @@ h1{
     background-color: #40414f;
     border: none;
     border-radius:5px 0px 0px 5px;
-    width: 60%;
+    width: 30%;
     padding: 1%;
     color: #F7F7F7;
+    margin: 0 5px;
 }
 
 .texto-bottom::placeholder{

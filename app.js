@@ -1,5 +1,7 @@
 //Variables
 const nombre = document.getElementById("text-name");
+const nombre2 = document.getElementById("text2");
+const customer = document.getElementById("text3");
 const botones = document.querySelectorAll('.btn-left');
 
 //Funcion para crear parrafo y borrar el anterior
@@ -23,6 +25,8 @@ function crearParrafoEnMiddle(numeroBoton, texto) {
 botones.forEach((boton, index) => {
     boton.addEventListener('click', () => {
         const textoIngresado = nombre.value;
+        const macAdress = nombre2.value;
+        const customerName = customer.value;
         //Array
         let textos = [
             `Hello ${textoIngresado}! Please confirm if the issue was fixed after the changes that have been made. Kind regards.`,
@@ -47,17 +51,22 @@ botones.forEach((boton, index) => {
             Attn.: HAlls - IPFone returns
             Address: 1035 NE 125th St 200, North Miami, FL 33161
             Business Hours: Mo to Fr., 9:00 AM to 5:00 PM
-            IMPORTANT: Please be so kind to send along a small piece of paper (or a sticker) inside the shipping box writing down Ticket number [XXXXXX].
+            IMPORTANT: Please be so kind to send along a small piece of paper (or a sticker) inside the shipping box writing down Ticket number ${macAdress}.
             
             Kind Regards.`,
             `Hi ${textoIngresado}
-            As agreed over the phone I'm sharing a list of items for the shipment of the [Yealink W60BXXX], the one that has its battery damaged/dead:
+            As agreed over the phone I'm sharing a list of items for the shipment of the ${macAdress}, the one that has its battery damaged/dead:
             
             Address
             Local contact full name
             Local contact cellphone
             Business Hours`,
+
+            `tcpdump -s0 -i eth0.${textoIngresado} -vv host ${macAdress}`,
+
+            `#${textoIngresado} -- ${macAdress} - ${customerName} - SOCKS proxy`
         ];
+
         const texto = textos[index];
         crearParrafoEnMiddle(index + 1, texto);
     });
