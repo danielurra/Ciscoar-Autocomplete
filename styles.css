@@ -40,8 +40,8 @@ h1{
 .btn-left{
     height: 5%;
     width: 75%;
-    margin-bottom: 5%;
-    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-top: 3%;
     background-color: var(--top-btm-color);
     border: none;
     border-radius: .2em;
