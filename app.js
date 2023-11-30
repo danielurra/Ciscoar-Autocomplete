@@ -64,7 +64,11 @@ botones.forEach((boton, index) => {
 
             `tcpdump -s0 -i eth0.${textoIngresado} -vv host ${macAdress}`,
 
-            `#${textoIngresado} -- ${macAdress} - ${customerName} - SOCKS proxy`
+            `#${textoIngresado} -- ${macAdress} - ${customerName} - SOCKS proxy`,
+
+            `whois ${macAdress} | grep Orga`,
+            
+            `${macAdress}@efax.ipfone.com`
         ];
 
         const texto = textos[index];
