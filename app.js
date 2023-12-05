@@ -68,7 +68,9 @@ botones.forEach((boton, index) => {
 
             `whois ${macAdress} | grep Orga`,
             
-            `${macAdress}@efax.ipfone.com`
+            `${macAdress}@efax.ipfone.com`,
+
+            `Hi ${textoIngresado}, I'm assigned to your ticket, I'm currently working with my internal team, I'll post any update here. Regards.`
         ];
 
         const texto = textos[index];
