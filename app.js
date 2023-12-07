@@ -31,7 +31,7 @@ botones.forEach((boton, index) => {
         let textos = [
             `Hello ${textoIngresado}! Please confirm if the issue was fixed after the changes that have been made. Kind regards.`,
             `Hi ${textoIngresado}, If no further assistance is needed this ticket will be automatically closed by the end of the day. Regards.`,
-            `All Yealink phones have the 'OK' button right in the center of the navigation button (Up, Down, Left, Right), if you press that button once the phone will reveal its IP Address that's something we need to monitor and troubleshoot phones, so please if it happens again, do share with us phone's IP Address. Best Regards.`,
+            `All Yealink phones have the 'OK' button right in the center of the navigation button (Up, Down, Left, Right), if you press that button once the phone will reveal its IP Address`,
             `Hi ${textoIngresado},
             There is a premium feature called "Selective Call Rejection" that can be added to the Main number (Hunt Group).
             
