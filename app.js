@@ -70,7 +70,11 @@ botones.forEach((boton, index) => {
             
             `${macAdress}@efax.ipfone.com`,
 
-            `Hi ${textoIngresado}, I'm assigned to your ticket, I'm currently working with my internal team, I'll post any update here. Regards.`
+            `Hi ${textoIngresado}, I'm assigned to your ticket, I'm currently working with my internal team, I'll post any update here. Regards.`,
+
+            `mysqldump -u root -p ${textoIngresado} > ${textoIngresado}-bkp.sql`,
+                        
+            `tar -cvzf /var/www/${textoIngresado}-bkp.tar.gz *`
         ];
 
         const texto = textos[index];
