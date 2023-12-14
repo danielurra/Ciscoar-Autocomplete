@@ -3,3 +3,4 @@ This is a simple but useful tool to help the Tier 2 technician on their  daily a
 * Commonly used phrases
 * SecureCRT sessions name
 * TCPDUMP command
+* MySQL backup commands
