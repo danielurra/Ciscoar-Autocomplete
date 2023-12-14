@@ -29,7 +29,12 @@ botones.forEach((boton, index) => {
         const customerName = customer.value;
         //Array
         let textos = [
-            `Hello ${textoIngresado}! Please confirm if the issue was fixed after the changes that have been made. Kind regards.`,
+            `Hi ${textoIngresado}, The first step to make a phone able to work from home is to whitelist your home's Public IP address.
+            Please open below website and let me know the IP Address shown:
+            https://ipchicken.com
+            The computer you will use to open above website must be connected to the same network your phone is connected, and please do not
+            open your work VPN or any other VPN.
+            `,
             `Hi ${textoIngresado}, If no further assistance is needed this ticket will be automatically closed by the end of the day. Regards.`,
             `All Yealink phones have the 'OK' button right in the center of the navigation button (Up, Down, Left, Right), if you press that button once the phone will reveal its IP Address`,
             `Hi ${textoIngresado},
@@ -41,13 +46,9 @@ botones.forEach((boton, index) => {
             
             Regards.`,
             `Something that always works is to select a random working phone, one that can be disconnected for a few minutes and swap these two devices.`,
-            `${textoIngresado}, please take a picture of the MAC Address of your device and send it to us, in case you don't know the MAC address is a 12-digits alphanumeric code printed on a separated label and located on the back of your device,
-        
-            We'll start investigating the issues reported as soon as we get the phone's MAC.`,
-            `Hi ${textoIngresado},
-        
-            See below IPFone's shipment details:
+            `${textoIngresado}, please take a picture of the MAC Address of your device and send it to us, in case you don't know the MAC address is a 12-digits alphanumeric code printed on a separated label and located on the back of your device.`,
             
+            `Hi ${textoIngresado}, See below IPFone's shipment details:             
             Attn.: HAlls - IPFone returns
             Address: 1035 NE 125th St 200, North Miami, FL 33161
             Business Hours: Mo to Fr., 9:00 AM to 5:00 PM
