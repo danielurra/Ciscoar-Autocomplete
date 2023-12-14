@@ -58,8 +58,9 @@ botones.forEach((boton, index) => {
             
             Kind Regards.`,
             `Hi ${textoIngresado},
-            For us to be able to send the replacement device, please confirm below data:
-            - Confirmed Address
+            As per my Equipment department your phone with MAC:${macAdress} is currently elegible for replacement as it is still under warranty.
+            Now, for us to be able to send the replacement device to your office, please confirm below data:
+            - Address
             - Local contact full name
             - Local contact cellphone
             - Business Hours`,
