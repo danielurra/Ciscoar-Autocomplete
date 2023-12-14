@@ -57,13 +57,12 @@ botones.forEach((boton, index) => {
             IMPORTANT: Please be so kind to send along a small piece of paper (or a sticker) inside the shipping box writing down Ticket number ${macAdress}.
             
             Kind Regards.`,
-            `Hi ${textoIngresado}
-            As agreed over the phone I'm sharing a list of items for the shipment of the ${macAdress}, the one that has its battery damaged/dead:
-            
-            Address
-            Local contact full name
-            Local contact cellphone
-            Business Hours`,
+            `Hi ${textoIngresado},
+            For us to be able to send the replacement device, please confirm below data:
+            - Confirmed Address
+            - Local contact full name
+            - Local contact cellphone
+            - Business Hours`,
 
             `tcpdump -s0 -i eth0.${textoIngresado} -vv host ${macAdress}`,
 
