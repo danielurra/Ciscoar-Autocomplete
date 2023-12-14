@@ -46,7 +46,9 @@ botones.forEach((boton, index) => {
             
             Regards.`,
             `Something that always works is to select a random working phone, one that can be disconnected for a few minutes and swap these two devices.`,
-            `${textoIngresado}, please take a picture of the MAC Address of your device and send it to us, in case you don't know the MAC address is a 12-digits alphanumeric code printed on a separated label and located on the back of your device.`,
+            `${textoIngresado}, please take a picture of the MAC Address of your device and send it to us, in case you don't know the MAC address is a 12-digits 
+            alphanumeric code printed on a separated label and located on the back of your device.
+            For wireless devices you'll find the MAC address on the base (the DECT device your wireless phone is paired with)`,
             
             `Hi ${textoIngresado}, See below IPFone's shipment details:             
             Attn.: HAlls - IPFone returns
