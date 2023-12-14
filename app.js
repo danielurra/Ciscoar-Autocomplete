@@ -45,7 +45,9 @@ botones.forEach((boton, index) => {
             I'm not really sure about what exactly is its monthly cost, something like $10, but I can have your sales rep reach out to you so He can explain everything.
             
             Regards.`,
-            `Something that always works is to select a random working phone, one that can be disconnected for a few minutes and swap these two devices.`,
+            `Something that always works is to select a random working phone (make sure you can make and receive calls), one that can be disconnected for a few minutes and swap these two devices.
+            most of the times a non-working phone becomes a working one just by changing desks.
+            If phone works, then please work with your IT personnel to make the original location be ready for the phone.`,
             `${textoIngresado}, please take a picture of the MAC Address of your device and send it to us, in case you don't know the MAC address is a 12-digits 
             alphanumeric code printed on a separated label and located on the back of your device.
             For wireless devices you'll find the MAC address on the base (the DECT device your wireless phone is paired with)`,
