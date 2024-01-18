@@ -81,7 +81,7 @@ botones.forEach((boton, index) => {
                         
             `tar -cvzf /var/www/${textoIngresado}-bkp.tar.gz *`,
 
-            `mkdir ${textoIngresado}\\${macAdress}`
+            `mkdir "${textoIngresado}"\\${macAdress}`
         ];
 
         const texto = textos[index];
