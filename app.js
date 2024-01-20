@@ -80,8 +80,10 @@ botones.forEach((boton, index) => {
             `mysqldump -u root -p ${textoIngresado} > ${textoIngresado}-bkp.sql`,
                         
             `tar -cvzf /var/www/${textoIngresado}-bkp.tar.gz *`,
+            
+            `mkdir "${textoIngresado}"\\${macAdress}`,
 
-            `mkdir "${textoIngresado}"\\${macAdress}`
+            `CREATE DATABASE ${textoIngresado} CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;`
         ];
 
         const texto = textos[index];
