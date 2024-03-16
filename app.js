@@ -63,9 +63,10 @@ botones.forEach((boton, index) => {
             As per my Equipment department your phone with MAC:${macAdress} is currently elegible for replacement as it is still under warranty.
             Now, for us to be able to send the replacement device to your office, please confirm below data:
             - Address
-            - Local contact full name
-            - Local contact cellphone
-            - Business Hours`,
+            - Local contact name:
+            - Local contact cellphone:
+            - Local contact email:
+            - Business Hours:`,
 
             `tcpdump -s0 -i eth0.${textoIngresado} -vv host ${macAdress}`,
 
