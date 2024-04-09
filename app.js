@@ -84,7 +84,17 @@ botones.forEach((boton, index) => {
             
             `mkdir "${textoIngresado}"\\"${macAdress}"`,
 
-            `CREATE DATABASE ${textoIngresado} CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;`
+            `CREATE DATABASE ${textoIngresado} CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;`,
+
+            `cd /var/www/${textoIngresado}.ubu.onprem/wordpress`,
+
+            `cd /var/www/${textoIngresado}.ciscoar.com/wordpress`,
+
+            `wget http://wordpress.org/latest.tar.gz`,
+
+            `tar xzvf latest.tar.gz`,
+
+            `rsync -avP ./ ../`
         ];
 
         const texto = textos[index];
