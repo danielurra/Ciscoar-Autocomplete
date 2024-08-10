@@ -48,9 +48,8 @@ botones.forEach((boton, index) => {
             `Something that always works is to select a random working phone (make sure you can make and receive calls), one that can be disconnected for a few minutes and swap these two devices.
             most of the times a non-working phone becomes a working one just by changing desks.
             If phone works, then please work with your IT personnel to make the original location be ready for the phone.`,
-            `${textoIngresado}, please take a picture of the MAC Address of your device and send it to us, in case you don't know the MAC address is a 12-digits 
-            alphanumeric code printed on a separated label and located on the back of your device.
-            For wireless devices you'll find the MAC address on the base (the DECT device your wireless phone is paired with)`,
+            `${textoIngresado}, In case you don't know the MAC address is a 12-digits alphanumeric code printed on a separated label and located on the back of your device.
+            For cordless handsets you'll find the MAC address on its base (the DECT device your wireless phone is paired with)`,
             
             `Hi ${textoIngresado}, See below IPFone's shipment details:             
             Attn.: HAlls - IPFone returns
@@ -62,7 +61,7 @@ botones.forEach((boton, index) => {
             `Hi ${textoIngresado},
             As per my Equipment department your phone with MAC:${macAdress} is currently elegible for replacement as it is still under warranty.
             Now, for us to be able to send the replacement device to your office, please confirm below data:
-            - Address
+            - Address:
             - Local contact name:
             - Local contact cellphone:
             - Local contact email:
