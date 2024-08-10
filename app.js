@@ -48,7 +48,7 @@ botones.forEach((boton, index) => {
             `Something that always works is to select a random working phone (make sure you can make and receive calls), one that can be disconnected for a few minutes and swap these two devices.
             most of the times a non-working phone becomes a working one just by changing desks.
             If phone works, then please work with your IT personnel to make the original location be ready for the phone.`,
-            `${textoIngresado}, In case you don't know the MAC address is a 12-digits alphanumeric code printed on a separated label and located on the back of your device.
+            `${textoIngresado} In case you don't know the MAC address is a 12-digits alphanumeric code printed on a separated label and located on the back of your device.
             For cordless handsets you'll find the MAC address on its base (the DECT device your wireless phone is paired with)`,
             
             `Hi ${textoIngresado}, See below IPFone's shipment details:             
